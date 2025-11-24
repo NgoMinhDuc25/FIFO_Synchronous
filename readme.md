@@ -26,6 +26,9 @@
 
 ## Simulation with ModelSim
 
+![Simulation_MS](simulation/ModelSim_simulation.png)
+- ModelSim simulation
+
 ![Simulation](https://raw.githubusercontent.com/NgoMinhDuc25/FIFO_Synchronous/refs/heads/main/simulation/simulation.png)
 - [Full simulation result](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/simulation/wf.pdf)
 
