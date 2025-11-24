@@ -1,15 +1,17 @@
 
-# FIFO Synchronous
-
-The simple project about FIFO, this repo shows how to organize project folder, design waveform, create block diagram and simulate.
-
 ## FIFO Ring 
 
 ![FIFO Ring ](https://raw.githubusercontent.com/NgoMinhDuc25/FIFO_Synchronous/refs/heads/main/wavedrom/FIFO%20Operation.png)
 
 ## Block Diagram
 
-![Block Diagram](https://raw.githubusercontent.com/NgoMinhDuc25/FIFO_Synchronous/refs/heads/main/block_diagram.jpg)
+![Block Diagram](public/block_diagram.jpg)
+
+- [FIFO Document](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/FIFO.md)
+- [FIFO_State Document](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/FIFO_State.md)
+- [FIFO_Memory Document](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/FIFO_Memory.md)
+- [FIFO_Write_Pointer Document](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/FIFO_Write_Pointer.md)
+- [FIFO_Read_Pointer Document](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/FIFO_Read_Pointer.md)
 
 ## Waveform
 
