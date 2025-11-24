@@ -5,7 +5,7 @@
 
 ## Block Diagram
 
-![Block Diagram](public/block_diagram.jpg)
+![Block Diagram](public/block_diagram.png)
 
 - [FIFO Document](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/FIFO.md)
 - [FIFO_State Document](https://github.com/NgoMinhDuc25/FIFO_Synchronous/blob/main/FIFO_State.md)
