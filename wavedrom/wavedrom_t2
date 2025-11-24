@@ -1,0 +1,17 @@
+{signal: [
+  {name: 'clk',     wave: 'P..................'},
+  {name: 'wr_en',   wave: '1................0.'},
+  {name: 'din',     wave: '33333333333333339x.', data: [
+    '00','01','02','03','04','05','06','07',
+    '08','09','0A','0B','0C','0D','0E','0F', 'FF'
+  ]},
+  {},
+  {name: 'f_full',  wave: '0...............1..'},
+  {name: 'f_empty', wave: '0..................'},
+],
+  head: {
+   text: 'FIFO Operation: Burst Write 00-0F & Overflow Check',
+   tick: 0,
+  },
+  config: { hscale: 1 }
+}

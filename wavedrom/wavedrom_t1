@@ -1,0 +1,21 @@
+{signal: [
+  {name: 'clk',     wave: 'P..............'},
+  {name: 'n_rst',   wave: '01.............'},
+  {},
+  {name: 'wr_en',   wave: '0.101010.......'},
+  {name: 'din',     wave: 'x.3.4.5.x......', data: ['aa', 'bb', 'cc']},
+  {name: 'f_empty', wave: '1.0..........1.'},
+  {},
+  {name: 'rd_en',   wave: '0.......101010.', node: '........a.b.c.'},
+  {name: 'dout',    wave: 'x........3.4.5.', node: '.........z.v.n.', data: ['aa', 'bb', 'cc']},
+  {name: 'f_full',  wave: '0..............'},
+],
+  head: {
+   text: 'FIFO Operation: Reset -> Write 3 -> Read 3',
+   tick: 0,
+  },
+  config: { hscale: 1 },
+  edge: [
+	'a~>z', 'b~>v', 'c~>n'
+	]
+}

@@ -1,0 +1,16 @@
+{signal: [
+  {name: 'clk',     wave: 'P.................'},
+  {name: 'wr_en',   wave: '0..101010.........'},
+  {name: 'din',     wave: 'x..3.4.5.x........', data: ['aa', 'bb', 'cc']},
+  {},
+  {name: 'rd_en',   wave: '010......101010.10'},
+  {name: 'f_empty', wave: '1...0.........1...'},
+  {name: 'dout',    wave: 'x.........3.4.5...', data: ['aa', 'bb', 'cc']},
+  {name: 'f_full',  wave: '0.................'},
+],
+  head: {
+   text: 'FIFO Operation: Invalid Read -> Write aa,bb,cc -> Valid Read',
+   tick: 0,
+  },
+  config: { hscale: 1 }
+}

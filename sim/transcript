@@ -1,0 +1,3 @@
+# vsim -do {add wave -position insertpoint vsim:/FIFO_2_tb/*} -i -view vsim.wlf 
+# vsim.wlf opened as dataset "vsim"
+# add wave -position insertpoint vsim:/FIFO_2_tb/* 

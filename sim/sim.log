@@ -1,0 +1,61 @@
+# vsim -assertdebug -do {log -r /*; run -all; quit} -l sim.log -debugDB -voptargs=+acc -c FIFO_2_tb 
+# Loading sv_std.std
+# Loading work.FIFO_2_tb
+# Loading work.FIFO
+# Loading work.FIFO_Write_Pointer
+# Loading work.FIFO_Read_Pointer
+# Loading work.FIFO_Memory
+# Loading work.FIFO_State
+# ** Error: (vsim-8357) Internal debugDB error id:1  ret:5 database is locked
+# 
+# log -r /* 
+#  run -all 
+# T=0 [RESET] Bat dau Reset (active-low)...
+# T=35000 [RESET] Hoan thanh Reset. FIFO nen o trang thai Empty.
+# 
+# --- Kiem tra 1: GHI va DOC co ban ---
+# T=55000 [WRITE] Ghi du lieu: 0xaa (Full=0)
+# T=75000 [WRITE] Ghi du lieu: 0xbb (Full=0)
+# T=95000 [WRITE] Ghi du lieu: 0xcc (Full=0)
+# T=125000 [READ]  Yeu cau doc... (Empty=0)
+# T=135000 [READ]  Du lieu doc ra: 0xxx
+# T=145000 [READ]  Yeu cau doc... (Empty=0)
+# T=155000 [READ]  Du lieu doc ra: 0xaa
+# T=165000 [READ]  Yeu cau doc... (Empty=0)
+# T=175000 [READ]  Du lieu doc ra: 0xbb
+# T=185000 [INFO] FIFO da bao rong sau khi doc het.
+# 
+# --- Kiem tra 2: DOC khi RONG ---
+# T=185000 [INFO] FIFO dang rong. Thu doc...
+# T=195000 [READ]  Yeu cau doc... (Empty=1)
+# T=205000 [READ]  Du lieu doc ra: 0xcc
+# T=215000 [INFO] Kiem tra doc khi rong: OK (empty flag van = 1)
+# 
+# --- Kiem tra 3: GHI khi DAY ---
+# T=215000 [INFO] Bat dau lap day FIFO (Depth=16)...
+# T=225000 [WRITE] Ghi du lieu: 0x00 (Full=0)
+# T=245000 [WRITE] Ghi du lieu: 0x01 (Full=0)
+# T=265000 [WRITE] Ghi du lieu: 0x02 (Full=0)
+# T=285000 [WRITE] Ghi du lieu: 0x03 (Full=0)
+# T=305000 [WRITE] Ghi du lieu: 0x04 (Full=0)
+# T=325000 [WRITE] Ghi du lieu: 0x05 (Full=0)
+# T=345000 [WRITE] Ghi du lieu: 0x06 (Full=0)
+# T=365000 [WRITE] Ghi du lieu: 0x07 (Full=0)
+# T=385000 [WRITE] Ghi du lieu: 0x08 (Full=0)
+# T=405000 [WRITE] Ghi du lieu: 0x09 (Full=0)
+# T=425000 [WRITE] Ghi du lieu: 0x0a (Full=0)
+# T=445000 [WRITE] Ghi du lieu: 0x0b (Full=0)
+# T=465000 [WRITE] Ghi du lieu: 0x0c (Full=0)
+# T=485000 [WRITE] Ghi du lieu: 0x0d (Full=0)
+# T=505000 [WRITE] Ghi du lieu: 0x0e (Full=0)
+# T=525000 [WRITE] Ghi du lieu: 0x0f (Full=0)
+# T=545000 [INFO] FIFO da bao day (full flag = 1).
+# T=545000 [INFO] FIFO da day. Thu ghi tran...
+# T=555000 [WRITE] Ghi du lieu: 0xff (Full=1)
+# T=575000 [INFO] Doc phan tu dau tien de kiem tra ghi tran...
+# T=585000 [READ]  Yeu cau doc... (Empty=0)
+# T=595000 [READ]  Du lieu doc ra: 0xcc
+# 
+# --- Tat ca kiem tra hoan tat ---
+# ** Note: $finish    : /home/ngoduc/CTW/FIFO_Sync_2/tb/tb_FIFO.sv(181)
+#    Time: 695 ns  Iteration: 1  Instance: /FIFO_2_tb

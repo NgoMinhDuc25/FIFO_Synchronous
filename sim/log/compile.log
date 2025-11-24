@@ -1,0 +1,28 @@
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FIFO_Write_Pointer
+-- Compiling module FIFO_Memory
+** Warning: ../rtl/FIFO_Memory.sv(1): (vlog-2275) 'FIFO_Memory' already exists and will be overwritten.
+-- Compiling module FIFO_Memory
+-- Compiling module FIFO_Read_Pointer
+** Warning: ../rtl/FIFO_Write_Pointer.sv(1): (vlog-2275) 'FIFO_Write_Pointer' already exists and will be overwritten.
+-- Compiling module FIFO_Write_Pointer
+-- Compiling module FIFO_State
+-- Compiling module FIFO
+** Warning: /home/ngoduc/CTW/FIFO_Sync_2/rtl/FIFO_State.sv(1): (vlog-2275) 'FIFO_State' already exists and will be overwritten.
+-- Compiling module FIFO_State
+** Warning: /home/ngoduc/CTW/FIFO_Sync_2/rtl/FIFO_Read_Pointer.sv(1): (vlog-2275) 'FIFO_Read_Pointer' already exists and will be overwritten.
+-- Compiling module FIFO_Read_Pointer
+** Warning: ../rtl/FIFO_Memory.sv(1): (vlog-2275) 'FIFO_Memory' already exists and will be overwritten.
+-- Compiling module FIFO_Memory
+** Warning: ../rtl/FIFO_Read_Pointer.sv(1): (vlog-2275) 'FIFO_Read_Pointer' already exists and will be overwritten.
+-- Compiling module FIFO_Read_Pointer
+** Warning: ../rtl/FIFO_Write_Pointer.sv(1): (vlog-2275) 'FIFO_Write_Pointer' already exists and will be overwritten.
+-- Compiling module FIFO_Write_Pointer
+** Warning: ../rtl/FIFO_State.sv(1): (vlog-2275) 'FIFO_State' already exists and will be overwritten.
+-- Compiling module FIFO_State
+** Warning: ../rtl/FIFO.sv(15): (vlog-2275) 'FIFO' already exists and will be overwritten.
+-- Compiling module FIFO
+-- Compiling module FIFO_2_tb
+
+Top level modules:
+	FIFO_2_tb
